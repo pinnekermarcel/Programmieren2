@@ -15,10 +15,13 @@ public class PunktTest {
     }
     @Test
     public void testVerschiebePunkt2() {
-        try {
+        /*try {
             p.verschiebePunkt(-1, 200);
             fail("RuntimeException expected, x is negative");
-        } catch ( RuntimeException e){}
+        } catch ( RuntimeException e){
+            //Message + überprüfen
+        }*/
+        exceptionHelper(-1, 200, "zielX or zielY is negative");
     }
     @Test
     public void testVerschiebePunkt3() {
@@ -42,5 +45,14 @@ public class PunktTest {
         }catch ( RuntimeException e){}
     }
 
-
+    public void exceptionHelper(int zielX, int zielY, String message){
+        try {
+            p.verschiebePunkt(zielX, zielY);
+            fail("RuntimeException expected, x is negative");
+        } catch ( RuntimeException e){
+            //Message + überprüfen
+            String errorMessage = e.getMessage();
+            assertEquals(message,  errorMessage);
+        }
+    }
 }

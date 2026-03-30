@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 public class KugelvolumenTest {
     @Test
     public void testeKugelvolumen() {
-        assertTrue(0 == Kugelvolumen.berechneKugelvolumen(0.0));
-        assertEquals(4.189, Kugelvolumen.berechneKugelvolumen(1.0),0.1);
+        assertEquals(0, Kugelvolumen.berechneKugelvolumen(0.0), 0.001);
+        assertEquals(4.189, Kugelvolumen.berechneKugelvolumen(1.0),0.001);
         assertEquals(523.6, Kugelvolumen.berechneKugelvolumen(5.0),0.1);
 
     }
