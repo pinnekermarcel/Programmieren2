@@ -1,6 +1,4 @@
-package Streamverdoppelung;
-
-import com.sun.source.tree.NewArrayTree;
+package lektion17.Streamverdoppelung;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
