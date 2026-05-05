@@ -1,4 +1,4 @@
-package lektion18.Üb1;
+package lektion18.MatrikelNummer;
 
 import java.io.*;
 

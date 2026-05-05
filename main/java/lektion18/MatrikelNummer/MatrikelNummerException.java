@@ -1,4 +1,4 @@
-package lektion18.Üb1;
+package lektion18.MatrikelNummer;
 
 public class MatrikelNummerException extends Exception {
     public MatrikelNummerException(String mesasge) {
